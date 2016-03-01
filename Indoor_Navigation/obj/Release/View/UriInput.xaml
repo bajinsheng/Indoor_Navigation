@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="One_山东大学_威海__巴金声.View.UriInput"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:One_山东大学_威海__巴金声.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="#F0F0F0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Height="120" Orientation="Horizontal">
+            <StackPanel.Background>
+                <ImageBrush ImageSource="ms-appx:Assets/Title.png"/>
+            </StackPanel.Background>
+            <Border BorderThickness="3" BorderBrush="#29C4FD" Width="80" Height="80" CornerRadius="60" Margin="10,30,0,0" >
+                <Ellipse Name="icon">
+                    <Ellipse.RenderTransform>
+                        <RotateTransform x:Name="iconTransform" CenterX="40" CenterY="40"/>
+                    </Ellipse.RenderTransform>
+                    <Ellipse.Fill>
+                        <ImageBrush Stretch="UniformToFill" ImageSource="ms-appx:Assets/cam.png"/>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Border>
+            <StackPanel>
+                <TextBlock x:Name="UriInputTitle" Text="服务器地址" FontFamily="ms-appx:/ttf/迷你简太极.TTF#迷你简太极" FontSize="28" Margin="20,40,20,0"/>
+                <TextBlock   FontFamily="Brush Script Std" Margin="30,0,0,0"/>
+            </StackPanel>
+        </StackPanel>
+        <TextBox Name="InputUri" Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center" Text="http://192.168.191.1:8001/loc"/>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar Background="#44ABF0">
+            <AppBarButton x:ConnectionId='1' Name="OkButton"                        Label="确定" Icon="Accept"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
+

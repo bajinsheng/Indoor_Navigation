@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BAJINSHENG-PC</Machine>
+    <WindowsUser>bajinsheng</WindowsUser>
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>0e247a9c-9d74-47c7-b6cf-ae988031f179</PackageIdentityName>
+    <IntermediateOutputPath>C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\bin\Debug\One-山东大学（威海）-巴金声.exe">
+      <PackagePath>One-山东大学（威海）-巴金声.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\ttf\迷你简太极.TTF">
+      <PackagePath>ttf\迷你简太极.TTF</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\Assets\cam.png">
+      <PackagePath>Assets\cam.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\Assets\Logo.scale-240.png">
+      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\Assets\SmallLogo.scale-240.png">
+      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\Assets\SplashScreen.scale-240.png">
+      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\Assets\Square71x71Logo.scale-240.png">
+      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\Assets\square_0_2d_B1s.png">
+      <PackagePath>Assets\square_0_2d_B1s.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\Assets\square_0_2d_F1s.png">
+      <PackagePath>Assets\square_0_2d_F1s.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\Assets\square_0_2d_F2s.png">
+      <PackagePath>Assets\square_0_2d_F2s.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\Assets\StoreLogo.scale-240.png">
+      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\Assets\Title.png">
+      <PackagePath>Assets\Title.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\Assets\WideLogo.scale-240.png">
+      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\bin\Debug\View\MainPage.xbf">
+      <PackagePath>View\MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\bin\Debug\View\RouteSelect.xbf">
+      <PackagePath>View\RouteSelect.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\bin\Debug\View\UriInput.xbf">
+      <PackagePath>View\UriInput.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\bin\Debug\One-山东大学（威海）-巴金声.xr.xml">
+      <PackagePath>One-山东大学（威海）-巴金声.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\bajinsheng\Documents\Visual Studio 2013\Projects\One-山东大学（威海）-巴金声\One-山东大学（威海）-巴金声\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

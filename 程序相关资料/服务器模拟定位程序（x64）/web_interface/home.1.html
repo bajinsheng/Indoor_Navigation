@@ -1,0 +1,117 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>location service</title>
+  <style type="text/css">
+    #figTable
+      {
+      font-family: "Microsoft YaHei", "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse:collapse;
+      border:1px solid #87B0FA;
+      }
+  </style>
+  <script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+</head>
+
+<body>
+
+<div id="model">
+  <h2>可视化室内引导比赛模型平面图</h2>
+  <p>
+    鼠标位于坐标:&nbsp;<span></span>.
+    <input id="btnb1" type="button" value="B1 (鼠标左键)"/>
+    <input id="btnf1" type="button" value="F1 (鼠标中键)"/>
+    <input id="btnf2" type="button" value="F2 (鼠标右键)"/>
+  </p>
+
+  <form id="locForm" action='http://127.0.0.1:8001/do?' autocomplete="on">
+    <input id="x" type="hidden" name="x" maxlength="10" value="0"/>
+    <input id="y" type="hidden" name="y" maxlength="10" value="0"/>
+    <input id="z" type="hidden" name="z" maxlength="10" value="0"/>
+  </form>
+
+  <img id="modelfig" src="/figs/square_0_2d_F2s.png" height="80%"/>
+  <img id="layers" src="/figs/layerss.png" height="80%"/>
+
+</div>
+
+<br/>
+
+
+<script type="text/javascript">
+  var x = 0.0;
+  var y = 0.0;
+  var z = 0.0;
+
+  $("img#modelfig").ready(function(){
+
+    $("img#modelfig").mousemove(function(e){
+      e.preventDefault();
+      x = ((e.pageX - $(this).offset().left)/$(this).width()).toFixed(4);
+      y = (1 - (e.pageY - $(this).offset().top)/$(this).height()).toFixed(4);
+      submitForm();
+    });
+
+    $("img#modelfig").mousedown(function(e){
+      e.preventDefault();
+      switch(e.which) // 1 = 鼠标左键 left; 2 = 鼠标中键; 3 = 鼠标右键
+      {
+      case 1:
+        z = 0.0;
+        $(this).attr("src", "/figs/square_0_2d_B1s.png");
+        break;
+      case 2:
+        z = 1.0;
+        $(this).attr("src", "/figs/square_0_2d_F1s.png");
+        break;
+      case 3:
+        z = 2.0;
+        $(this).attr("src", "/figs/square_0_2d_F2s.png");
+        break;
+      }
+      submitForm();
+    });
+
+    $("input#btnb1").click(function(e){
+      e.preventDefault();
+      z = 0.0;
+      $("img#modelfig").attr("src", "/figs/square_0_2d_B1s.png");
+      submitForm();
+    });
+
+    $("input#btnf1").click(function(e){
+      e.preventDefault();
+      z = 1.0;
+      $("img#modelfig").attr("src", "/figs/square_0_2d_F1s.png");
+      submitForm();
+    });
+
+    $("input#btnf2").click(function(e){
+      e.preventDefault();
+      z = 2.0;
+      $("img#modelfig").attr("src", "/figs/square_0_2d_F2s.png");
+      submitForm();
+    });
+
+    function submitForm(){
+      $("span").text(x + ", " + y + ", " + z);
+      $("#locForm input#x").val(x);
+      $("#locForm input#y").val(y);
+      $("#locForm input#z").val(z);
+      url = window.location.href.replace('home', 'do?');
+      posting = $.get( url, $("#locForm").serialize() );
+      <!-- posting.done(); -->
+      posting.done();
+    }
+
+    $(document).bind("contextmenu",function(e){
+      return false;
+    });
+
+  });
+
+</script>
+
+</body>
+</html>
